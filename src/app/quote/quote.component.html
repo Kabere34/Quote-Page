@@ -1,12 +1,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
-
+<div class="quotes-content">
 <div class="container">
   <h1 class="text-center">Quotes</h1>
 
-<!-- <div *ngFor = 'let quote of quotes'>
-  <div>{{quote}}</div>
-</div> -->
+
 
 <div class="card-column">
   <div class="card" *ngFor = 'let quote of quotes let i=index'>
@@ -28,15 +26,23 @@
   <span>uploaded by: {{quote.upload}}</span><br>
 </div>
 
-<div class="card-text"></div>
-
 </div>
 
-  </div>
 </div>
 </div>
 
 
+</div>
+
+ <div class="highestQuote">
+ <h2>Highest Voted Quote</h2>
+
+</div>
+
+
+
+
+</div>
 
 
 

@@ -5,7 +5,7 @@ export class Quote {
   upvote: number;
   downvote: number;
   upload: string;
-  constructor(id: number, quote: string, author: string, upvote: number, downvote: number, upload: string) {
+  constructor(id: number, quote: string, author: string, upvote: number, downvote: number, upload: string,) {
     this.id = id;
     this.quote = quote;
     this.author = author;

@@ -30,6 +30,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].upvote = down;
 
   }
+
   constructor() { }
 
   ngOnInit(): void {
