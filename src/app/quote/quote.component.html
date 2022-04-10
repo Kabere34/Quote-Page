@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
 <div class="container">
   <h1 class="text-center">Quotes</h1>
 
@@ -9,8 +12,11 @@
   <div class="card" *ngFor = 'let quote of quotes let i=index'>
 
 <div class="card-details">
-  <p class="card-title">{{quote}}</p>
-.card-text
+  <p class="card-title">
+    <i class="fas  fa-quote-left    "></i>
+    {{quote}}
+  </p>
+<div class="card-text"></div>
 
 </div>
 
