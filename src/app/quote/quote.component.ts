@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
+
 export class QuoteComponent implements OnInit {
+
+
+
   quotes: Quote[] = [
     new Quote(1, "There is always light.If only we're brave enough to see it. If only we're brave enough to be it.", 'Amanda Gorman', 2, 1, 'Ivy'),
     new Quote(2, "I have learned not to allow rejection to move me.", 'Cicely Tyson', 2, 1, 'Ivy'),

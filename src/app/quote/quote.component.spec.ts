@@ -15,7 +15,7 @@ describe('QuoteComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteComponent);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance; s
     fixture.detectChanges();
   });
 
