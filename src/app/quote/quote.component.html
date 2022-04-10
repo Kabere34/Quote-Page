@@ -14,14 +14,20 @@
 <div class="card-details">
   <p class="card-title">
     <span>{{quote.id}}.</span><br>
-    <i class="fas  fa-quote-left    "></i>
+    <i class="fas  fa-quote-left    "></i><br>
     <span>{{quote.quote}}</span>
-    <span>{{quote.author}}</span><br>
-  <span>{{quote.upvote}}</span><br>
-  <span>{{quote.downvote}}</span><br>
-  <span>{{quote.upload}}</span><br>
-
   </p>
+    <div class="">
+
+    <span>Author: ~{{quote.author}}~</span><br>
+    <i class="far fa-thumbs-up    " ></i>
+    <i class="far fa-thumbs-down    "></i><br>
+
+  <span>{{quote.upvote}} upvotes</span><br>
+  <span>{{quote.downvote}} downvotes</span><br>
+  <span>uploaded by: {{quote.upload}}</span><br>
+</div>
+
 <div class="card-text"></div>
 
 </div>
