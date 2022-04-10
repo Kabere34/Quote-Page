@@ -23,7 +23,16 @@ export class QuoteComponent implements OnInit {
 
 
 
-  ]
+  ];
+
+  addNewQuote(quote) {
+    let quotesLength = this.quotes.length + 1;
+
+    let quoteObj = new Quote(quotesLength, quote.quote, quote.author, 0, 0,quote.userName,);
+
+    this.quotes.push(quoteObj);
+  }
+
   upvoteFunc(index) {
     var up = this.quotes[index].upvote + 1;
     this.quotes[index].upvote = up;
