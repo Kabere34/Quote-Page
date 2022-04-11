@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Quotes } from './quotes';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'app-quote';
-quotes:string[];
+quotes:Quotes[]=[
+  {id:1, quote:"quote1",author:"Ivy",datePassed:new Date,userName:"Daisy",upvote:0,downvote:0}
+];
 
-  constructor(){
-  this.quotes=['quote1','quote2'];
-  }
+
 }
