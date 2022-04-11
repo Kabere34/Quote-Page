@@ -2,5 +2,11 @@
   <h2>Quotes</h2>
 </div>
 <ul>
-  <li *ngFor="let quote of quotes">{{ quote.quote }}</li>
+  <li *ngFor="let quote of quotes">
+    {{ quote.quote }},
+    {{ quote.author }}
+    {{ quote.userName }}
+    {{ quote.upvote }}
+    {{ quote.downvote }}
+  </li>
 </ul>
