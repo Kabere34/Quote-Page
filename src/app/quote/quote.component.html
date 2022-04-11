@@ -1,0 +1,16 @@
+<h1>Quotes</h1>
+
+<div>
+  <h2>Quotes</h2>
+</div>
+<ul>
+  <li *ngFor="let quote of quotes">
+    {{ quote.id }}
+    {{ quote.quote }},
+    {{ quote.author }}
+    {{ quote.datePassed }}
+    {{ quote.userName }}
+    {{ quote.upvote }}
+    {{ quote.downvote }}
+  </li>
+</ul>
