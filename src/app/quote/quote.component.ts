@@ -33,6 +33,17 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quoteObj);
   }
 
+  deleteQuote(isDeleted, index) {
+
+    if (isDeleted) {
+      let remove = confirm(`Are you sure you want to delete this ${this.quotes[index].quote}?`)
+      if (remove) {
+        this.quotes.splice(index, 1)
+      }
+    }
+
+  }
+
   upvoteFunc(index) {
     var up = this.quotes[index].upvote + 1;
     this.quotes[index].upvote = up;
