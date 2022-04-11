@@ -4,14 +4,13 @@
   integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
   crossorigin="anonymous"
 />
+<div class="navbar-nav ml-auto">
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
 
 <div class="quotes-content">
   <div class="container">
     <h1 class="text-center">Quotes</h1>
-
-    <div class="navbar-nav ml-auto">
-      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    </div>
 
     <div class="card-column">
       <div class="card" *ngFor="let quote of quotes; let i = index">
@@ -28,10 +27,10 @@
               <i class="far fa-thumbs-down" (click)="downvoteFunc(i)"></i><br />
             </p>
 
-            <app-quote
+            <!-- <quote-text
               [quote]="quote"
               (isDeleted)="deleteQuote($event, i)"
-            ></app-quote>
+            ></quote-text> -->
 
             <!-- <app-quote-details
               [quote]="quote"
@@ -39,7 +38,7 @@
             ></app-quote-details> -->
 
             <span>{{ quote.upvote }} upvotes</span><br />
-            <span>{{ quote.downvote }} downvotes</span><br />
+            <span>{{ quote.downvote }} downvotes</span><br />n
             <span>uploaded by: {{ quote.userName }}</span
             ><br />
           </div>

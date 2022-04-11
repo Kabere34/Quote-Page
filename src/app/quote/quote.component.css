@@ -1,3 +1,21 @@
-i{
+i {
   padding: 3px;
+}
+.card {
+  background-color: rgba(41, 43, 29, 0.67);
+  color: rgb(211, 205, 197);
+  border: 1px rgb(252, 166, 7);
+  border-style: groove;
+}
+.quotes {
+  margin-top: 100px;
+  color: rgb(240, 226, 205);
+  display: inline-flexbox;
+}
+/* .container {
+  width: 80%;
+  float: left;
+} */
+.card-columns {
+  column-count: 5;
 }
