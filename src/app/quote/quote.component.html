@@ -4,15 +4,19 @@
   <h2>Quotes</h2>
 </div>
 <ul>
-  <li *ngFor="let quote of quotes">
-    {{ quote.id }}
-    {{ quote.quote }},
-    {{ quote.author }}
-    {{ quote.datePassed }}
-    {{ quote.userName }}
-    {{ quote.upvote }}
-    {{ quote.downvote }}
+  <div *ngFor="let quote of quotes; let i = index">
+    <li>
+      {{ quote.id }}
+      {{ quote.quote }},
+      {{ quote.upvote }}
+      {{ quote.downvote }}
+    </li>
 
-    <app-quote-detail [quote]="quote"></app-quote-detail>
-  </li>
+    <button (click)="toggleDetails(i)">Show Quote</button>
+    <app-quote-detail
+      *ngIf="quote.showDescription"
+      [quote]="quote"
+      (done)="completeQuote($event, i)"
+    ></app-quote-detail>
+  </div>
 </ul>
