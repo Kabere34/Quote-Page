@@ -7,12 +7,12 @@ import { Quote } from '../quote';
 })
 export class QuoteTextComponent implements OnInit {
 
-  @Input() quote: Quote;
-  @Output() isDeleted = new EventEmitter<boolean>();
+// @Input() quote: Quote;
+//   @Output() isDeleted = new EventEmitter<boolean>();
 
-  quoteDeletion(remove: boolean) {
-    this.isDeleted.emit(remove);
-  }
+//   quoteDeletion(remove: boolean) {
+//     this.isDeleted.emit(remove);
+//   }
 
   constructor() { }
 
