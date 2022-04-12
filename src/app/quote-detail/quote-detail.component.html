@@ -5,8 +5,12 @@
 <i class="far fa-thumbs-up m-3" (click)="upvoting()"></i>
 <i class="far fa-thumbs-down" (click)="downvoting()"></i><br />
 
-<p>Upvote:{{ quote.upvote }}</p>
-<p>Downvote:{{ quote.downvote }}</p>
+<p class="up">
+  Upvote:<span class="red">{{ quote.upvote }}</span>
+</p>
+<p class="up">
+  Downvote:<span class="red">{{ quote.downvote }}</span>
+</p>
 
 <button class="btn btn-info btn-sm m-4" (click)="quoteDone(true)">
   Delete

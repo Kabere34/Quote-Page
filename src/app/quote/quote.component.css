@@ -4,10 +4,21 @@
 }
 .card {
   column-count: 4;
-  color: rgb(234, 174, 85);
-  border: 1px chartreuse;
+  color: blanchedalmond;
+  border: 1px #80ff00;
   border-style: groove;
+  background-color: rgba(250, 235, 215, 0.1);
 }
 li {
   list-style: none;
+}
+li:hover {
+  color: rgb(242, 217, 180);
+  text-decoration-line: underline;
+}
+h1 {
+  color: #08d4bf;
+}
+h1:hover {
+  color: #6a6c24;
 }

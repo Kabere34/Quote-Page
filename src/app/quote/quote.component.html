@@ -12,12 +12,13 @@
     <div class="">
       <ul class="row">
         <div
-          class="col card p-3 m-2"
+          class="col card pt-1 m-2"
           *ngFor="let quote of quotes; let i = index"
         >
-          <li class="p-3 mt-3" (click)="toggleDetails(i)">
-            {{ quote.id }}
-            {{ quote.quote }},
+          <li class="p-3 mt-1" (click)="toggleDetails(i)">
+            <p>{{ quote.id }}.</p>
+            <i class="fas fa-quote-left"></i><br />
+            {{ quote.quote }}
             <!-- {{ quote.upvote }}
             {{ quote.downvote }} -->
           </li>

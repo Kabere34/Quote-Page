@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Indie+Flower&display=swap");
 * {
-  font-family: "Indie Flower", cursive;
+  font-family: "BIZ UDPMincho", serif;
   font-size: large;
+}
+body {
+  background-color: #023047;
 }
