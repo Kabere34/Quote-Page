@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # AppQuote
+=======
+# QuotePage
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 

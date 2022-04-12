@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "app-quote": {
+=======
+    "QuotePage": {
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +21,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/app-quote",
+=======
+            "outputPath": "dist/quote-page",
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -34,6 +43,11 @@
               "node_modules/jquery/dist/jquery.min.js",
           "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+=======
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
           },
           "configurations": {
             "production": {
@@ -72,10 +86,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "app-quote:build:production"
             },
             "development": {
               "browserTarget": "app-quote:build:development"
+=======
+              "browserTarget": "QuotePage:build:production"
+            },
+            "development": {
+              "browserTarget": "QuotePage:build:development"
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +104,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "app-quote:build"
+=======
+            "browserTarget": "QuotePage:build"
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
           }
         },
         "test": {
@@ -98,13 +123,28 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
             ],
             "scripts": []
+=======
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+          "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
           }
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "app-quote"
+=======
+  "defaultProject": "QuotePage"
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
 }

@@ -4,6 +4,7 @@
   integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
   crossorigin="anonymous"
 />
+<<<<<<< HEAD
 
 <div class="container">
   <h1 class="text-center">Quotes</h1>
@@ -39,3 +40,54 @@
     </div>
   </div>
 </div>
+=======
+<div class="navbar-nav ml-auto">
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
+
+<div class="quotes-content">
+  <div class="container">
+    <h1 class="text-center">Quotes</h1>
+
+    <div class="card-column">
+      <div class="card" *ngFor="let quote of quotes; let i = index">
+        <div class="card-details">
+          <p class="card-title">
+            <span>{{ quote.id }}.</span><br />
+            <i class="fas fa-quote-left"></i><br />
+            <span>{{ quote.quote }}</span>
+          </p>
+          <div class="">
+            <span>Author: ~{{ quote.author }}~</span><br />
+            <p>
+              <i class="far fa-thumbs-up" (click)="upvoteFunc(i)"></i>
+              <i class="far fa-thumbs-down" (click)="downvoteFunc(i)"></i><br />
+            </p>
+
+            <!-- <quote-text
+              [quote]="quote"
+              (isDeleted)="deleteQuote($event, i)"
+            ></quote-text> -->
+
+            <!-- <app-quote-details
+              [quote]="quote"
+              (isDeleted)="deleteQuote($event, i)"
+            ></app-quote-details> -->
+
+            <span>{{ quote.upvote }} upvotes</span><br />
+            <span>{{ quote.downvote }} downvotes</span><br />
+            <span>uploaded by: {{ quote.userName }}</span
+            ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highestQuote">
+    <h2>Highest Voted Quote</h2>
+  </div>
+</div>
+
+<!-- modal -->
+>>>>>>> ff82ff582d32e6594beafc5dbb1522aaa9724588
