@@ -7,7 +7,7 @@
 
 <div class="container">
   <h1>Quotes</h1>
-  <i class="far fa-thumbs-up"></i>
+
   <div class="row">
     <div class="col-md-6">
       <ul>
@@ -15,8 +15,8 @@
           <li>
             {{ quote.id }}
             {{ quote.quote }},
-            {{ quote.upvote }}
-            {{ quote.downvote }}
+            <!-- {{ quote.upvote }}
+            {{ quote.downvote }} -->
           </li>
 
           <button (click)="toggleDetails(i)">Show Quote</button>
