@@ -6,7 +6,7 @@
 />
 
 <div class="container">
-  <h1>Quotes</h1>
+  <h1 class="text-center">Quotes</h1>
 
   <div class="container-fluid">
     <div class="">
@@ -15,7 +15,7 @@
           class="col card p-3 m-2"
           *ngFor="let quote of quotes; let i = index"
         >
-          <li (click)="toggleDetails(i)">
+          <li class="p-3 mt-3" (click)="toggleDetails(i)">
             {{ quote.id }}
             {{ quote.quote }},
             <!-- {{ quote.upvote }}

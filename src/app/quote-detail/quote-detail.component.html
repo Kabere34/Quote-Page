@@ -1,9 +1,13 @@
-<p>
-  {{ quote.author }}
-  {{ quote.datePassed | date }}
-  {{ quote.userName }}
-</p>
-<i class="far fa-thumbs-up" (click)="upvoting()">{{ quote.upvote }}</i>
-<i class="far fa-thumbs-down" (click)="downvoting()">{{ quote.downvote }}</i>
+<p>Author: {{ quote.author }}</p>
+<p>Date Posted: {{ quote.datePassed | date }}</p>
+<p>Uploaded By: {{ quote.userName }}</p>
 
-<button class="btn btn-primary btn-sm" (click)="quoteDone(true)">Delete</button>
+<i class="far fa-thumbs-up m-3" (click)="upvoting()"></i>
+<i class="far fa-thumbs-down" (click)="downvoting()"></i><br />
+
+<p>Upvote:{{ quote.upvote }}</p>
+<p>Downvote:{{ quote.downvote }}</p>
+
+<button class="btn btn-info btn-sm m-4" (click)="quoteDone(true)">
+  Delete
+</button>
